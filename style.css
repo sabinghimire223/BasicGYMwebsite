@@ -1,0 +1,247 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  font-family: "Teko", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  height: 100vh;
+  scroll-behavior: smooth;
+  transition: 0.3 ease-in-out;
+  overflow-x: hidden;
+}
+/* NAV BAR */
+nav {
+  position: fixed;
+  width: 100%;
+}
+.logo {
+  height: auto;
+  width: 10%;
+  /* background-color: antiquewhite; */
+  margin-left: 50px;
+}
+.non_mobile {
+  background-color: rgb(39, 38, 38);
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+}
+.logo-img {
+  width: 50%;
+  /* height: 100px; */
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-right: 10px;
+  padding-inline: 2rem;
+}
+
+nav > .nav-links > ul > li > a {
+  text-decoration: none;
+  color: rgb(243, 242, 242);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* HERO LANDER */
+.bg-blur {
+  position: absolute; /* or absolute, depending on layout */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxz");
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px); /* Adjust the blur intensity */
+  z-index: -1; /* Puts it behind other content */
+}
+h1,
+h4 {
+  color: rgb(243, 242, 242);
+  font-size: 100;
+}
+.heroLander {
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10%;
+  align-items: center;
+  transition: 0.3 ease-in-out;
+}
+h4 {
+  font-size: 5000;
+}
+.button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgb(99, 5, 5);
+  color: rgb(243, 242, 242);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+/* About US  */
+.aboutUS {
+  display: flex;
+  height: fit-content;
+  align-items: center;
+  gap: 5em;
+  padding-inline: 10em;
+  transition: 0.3s ease-in-out;
+  flex-wrap: wrap;
+}
+
+.aboutUS-img {
+  height: auto;
+}
+
+.aboutUS-content {
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.aboutUS-img,
+.aboutUS-img > img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.aboutUS_para {
+  font-size: 1.7rem;
+  margin-bottom: 1em;
+}
+
+.ul {
+  display: flex;
+  align-items: start;
+  gap: 0.5em;
+  font-size: 1.2rem;
+  list-style-type: disc;
+  flex-direction: column;
+  padding-left: 1.5em;
+}
+
+/* FOOTER */
+footer {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright {
+  text-align: center;
+  font-size: 100%;
+  font-weight: 50;
+  color: black;
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+  .logo-img {
+    width: 100%;
+    /* height: 100px; */
+  }
+  nav > .nav-links > ul > li > a {
+    text-decoration: none;
+    color: rgb(243, 242, 242);
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+  .bg-blur {
+    position: absolute; /* or absolute, depending on layout */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxz");
+    background-size: cover;
+    background-position: start;
+    filter: blur(2px); /* Adjust the blur intensity */
+    z-index: -1; /* Puts it behind other content */
+  }
+  .aboutUS {
+    flex-direction: column;
+    padding-inline: 0em;
+    padding-top: 5rem;
+    height: 90%;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    width: 100%;
+    /* height: 100px; */
+  }
+  nav > .nav-links > ul > li > a {
+    text-decoration: none;
+    color: rgb(243, 242, 242);
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  .bg-blur {
+    position: absolute; /* or absolute, depending on layout */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1434754205268-ad3b5f549b11?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxz");
+    background-size: cover;
+    background-position: start;
+    filter: blur(2px); /* Adjust the blur intensity */
+    z-index: -1; /* Puts it behind other content */
+  }
+  .aboutUS {
+    flex-direction: column;
+    padding-inline: 0em;
+    padding-top: 5rem;
+    height: 90%;
+    width: 80%;
+  }
+
+  .aboutUS-img,
+  .aboutUS-img > img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .aboutUS-content {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .aboutUS_para {
+    font-size: 1.4rem;
+  }
+
+  .ul {
+    font-size: 1rem;
+  }
+}
