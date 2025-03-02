@@ -114,6 +114,12 @@ h4 {
   border-radius: 10px;
 }
 
+.aboutUS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .aboutUS-img,
 .aboutUS-img > img {
   width: 300px;
