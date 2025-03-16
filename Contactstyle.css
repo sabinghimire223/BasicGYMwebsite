@@ -6,6 +6,9 @@
 .bg {
   background: var(--linear);
 }
+html{
+  scroll-behavior: smooth;
+}
 main {
   display: flex;
   align-items: center;
