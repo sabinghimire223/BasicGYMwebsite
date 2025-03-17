@@ -104,7 +104,7 @@ nav > .nav-links > ul > li > a {
   margin-top: 20px;
   width: 10rem;
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: #007bff;
   color: rgb(243, 242, 242);
   border: none;
   border-radius: 50px;
@@ -115,6 +115,43 @@ nav > .nav-links > ul > li > a {
   text-decoration: none;
   color: rgb(243, 242, 242);
   font-weight: bold;
+}
+
+/* Reviews */
+
+#reviews {
+  padding: 5rem;
+}
+#reviews h2 {
+  padding-block: 5rem;
+  text-align: center;
+  color: black;
+}
+.review_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  box-shadow: 0.1px 0px 20px 0px rgb(137, 136, 136);
+}
+.box img {
+  width: 15em;
+  height: 15em;
+  border-radius: 80%;
+  object-fit: cover;
+}
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.details {
+  font-size: normal;
 }
 
 /* About US  */
@@ -171,7 +208,6 @@ h2 {
   flex-direction: column;
   padding-left: 1.5em;
 }
-
 /* FOOTER */
 #footer {
   height: 25vh;
@@ -354,5 +390,9 @@ h2 {
   }
   #footer {
     padding-top: 0px;
+  }
+  .box img {
+    width: 5em;
+    height: 5em;
   }
 }
